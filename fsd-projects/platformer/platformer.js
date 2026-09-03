@@ -49,13 +49,14 @@ $(function () {
     createCollectable("coin", 880, 200, 0, 1, 700, 900, 2);
     createCollectable("coin", 1200, 170, 0.5, 0.37);
     createCollectable("coin",520,570, 0.5, 0.37);
+    createCollectable("coin",150,570, 0.5, 0.37);
     
     // TODO 4 - Create Cannons
 
 createCannon("top", 200, 900);
 createCannon("right", 300, 2000);
 createCannon("right", 400, 2000);
-createCannon("top", 1100, 900);
+createCannon("top", 1100, 1500);
     
     
     //////////////////////////////////
