@@ -46,7 +46,7 @@ $(function () {
 
     // TODO 3 - Create Collectables
 
-    createCollectable("coin", 450, 170, 0.5, 0.37);
+    createCollectable("coin", 550,200, 0.5, 0.37);
     createCollectable("coin", 880, 200, 0, 1, 700, 900, 2);
     createCollectable("coin", 1200, 170, 0.5, 0.37);
     createCollectable("coin",520,570, 0.5, 0.37);
