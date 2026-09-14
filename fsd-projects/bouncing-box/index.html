@@ -8,20 +8,26 @@
       .box {
         width: 70px;
         height: 70px;
-        background-color: teal;
         font-size: 300%;
         text-align: center;
         user-select: none;
-        display: block;
         position: absolute;
         top: 100px;
         /* Change me! */
         left: 0px;
+        top: 730px
+        
       }
 
       .board {
         height: 100vh;
       }
+      body {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwLen6rWFLYmMo_1sbDA-u1YJjGmuvkQPgfjvUEIe0AQjxyf-m8QUxEbge:https://images6.alphacoders.com/860/860645.png&s=10");
+ background-color: #cccccc;
+ background-size: 1000px 1000px;
+ background-position: 10%;
+}
     </style>
     <!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
   </head>
@@ -29,12 +35,11 @@
   <body class="board">
     <!-- HTML for the box -->
     <div class="box">?</div>
-
+    <img class="box" src="images/shell.png" />
     <script>
       (function () {
         "use strict";
         /* global jQuery */
-
         //////////////////////////////////////////////////////////////////
         /////////////////// SETUP DO NOT DELETE //////////////////////////
         //////////////////////////////////////////////////////////////////
@@ -55,8 +60,9 @@
         box.on("click", handleBoxClick);
 
         // moves the Box to a new position on the screen along the X-Axis
-        function moveBoxTo(newPositionX) {
+        function moveBoxTo(newPositionX, newPositionY) {
           box.css("left", newPositionX);
+          box.css("bottom", newPositionY);
         }
 
         // changes the text displayed on the Box
@@ -73,6 +79,8 @@
         var positionX = 5;
         var points = 0;
         var speed = 10;
+        var positionY = 10;
+        
 
 
 
@@ -83,7 +91,7 @@
          */
         function update() {
 
-          moveBoxTo(positionX);
+          moveBoxTo(positionX, positionY);
           positionX += speed;
           if (positionX >= boardWidth) {
           // Code to reverse speed goes here
@@ -107,10 +115,9 @@
           positionX = 0
           changeBoxText(points)
           points++;
-          speed += 3;
           speed = 3 * points + 10;
         }
-
+      
 
         
       })();
