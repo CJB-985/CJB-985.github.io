@@ -6,8 +6,8 @@
     <script src="jquery.min.js"></script>
     <style>
       .box {
-        width: 70px;
-        height: 70px;
+        width: 90px;
+        height: 90px;
         font-size: 300%;
         text-align: center;
         user-select: none;
@@ -18,9 +18,11 @@
         top: 730px
         
       }
+    
 
       .board {
         height: 100vh;
+        
       }
       body {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwLen6rWFLYmMo_1sbDA-u1YJjGmuvkQPgfjvUEIe0AQjxyf-m8QUxEbge:https://images6.alphacoders.com/860/860645.png&s=10");
@@ -36,6 +38,7 @@
     <!-- HTML for the box -->
     <div class="box">?</div>
     <img class="box" src="images/shell.png" />
+    <div class="text">?</div>
     <script>
       (function () {
         "use strict";
@@ -47,6 +50,7 @@
         var box = jQuery(".box"); // reference to the HTML .box element
         var board = jQuery(".board"); // reference to the HTML .board element
         var boardWidth = board.width(); // the maximum X-Coordinate of the screen
+      
 
         // update the boardWidth variable when the window is resized
         jQuery(window).on("resize", function () {
@@ -69,7 +73,6 @@
         function changeBoxText(newText) {
           box.text(newText);
         }
-
         //////////////////////////////////////////////////////////////////
         /////////////////// YOUR CODE BELOW HERE /////////////////////////
         //////////////////////////////////////////////////////////////////
