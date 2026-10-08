@@ -41,11 +41,11 @@ h2 {
   font-weight: 900;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-  color: #d3acac;
+  color: #ffbcc1;
 }
 p {
   margin: 0;
-  color: #d3acac;
+  color: #ffbcc1;
   font-size: 0.9rem;
   line-height: 1.4;
   text-decoration: underline;
@@ -102,7 +102,7 @@ p {
 }
 
 #interests li {
-  background: #ffe8ec;
+  background: #ffbcc1;
   border-color: #912b2b;
   color: #912b2b;
 }
@@ -175,8 +175,8 @@ nav h1 {
   color: #fff;
 }
 nav {
-  background: #df8f95;
-  border-color: #df8f95;
+  background: #ffbcc1;
+  border-color: #ffbcc1;
 }
 
 nav h1 {
