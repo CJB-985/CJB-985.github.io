@@ -44,6 +44,10 @@ By the end of this project, you’ll have built a custom game level that’s rea
 | **Add 3 cannons**               | Place cannons on different sides with varying delays          |
 | **Design a playable level**     | Create a level that’s challenging but achievable              |
 
+## Two-Level Progression
+
+Collect every coin in Level 1, then press any key at the completion screen to start Level 2. Collect every coin in Level 2 to win; press any key after winning to restart.
+
 <br><br>
 
 ## **Functions Key Terms**
